@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Interactive Webpage</title>
+  <link rel="stylesheet" href="Task3.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Webpage</h1>
+  </header>
+
+  <!-- Quiz Section -->
+  <section id="quiz">
+    <h2>Quick Quiz</h2>
+    <p id="question"></p>
+    <div id="options"></div>
+    <button id="nextBtn">Next Question</button>
+    <p id="score"></p>
+  </section>
+
+  <!-- Image Carousel -->
+  <section id="carousel">
+    <h2>Image Carousel</h2>
+    <div class="carousel-container">
+      <button id="prev">⟨</button>
+      <img id="carousel-img" src="https://picsum.photos/400/200?random=1" alt="carousel">
+      <button id="next">⟩</button>
+    </div>
+  </section>
+
+  <!-- API Section -->
+  <section id="api">
+    <h2>Random Joke</h2>
+    <button id="fetchJoke">Get Joke</button>
+    <p id="joke"></p>
+  </section>
+
+  <script src="Task3.js"></script>
+</body>
+</html>

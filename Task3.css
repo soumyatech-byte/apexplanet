@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Carousel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container img {
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+.carousel-container button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.carousel-container button:hover {
+  background: #45a049;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .carousel-container img {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .carousel-container {
+    flex-direction: column;
+  }
+  .carousel-container img {
+    width: 250px;
+    height: 120px;
+  }
+}
